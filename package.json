@@ -1,0 +1,38 @@
+{
+  "name": "bp-node-tool",
+  "version": "1.0.0",
+  "description": "NodeJS bolierplate",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node ./src",
+    "dev": "nodemon ./src/index.js --ext js -- --repo sindresorhus/got",
+    "eslint": "eslint src/ --ext .js || true",
+    "eslint:fix": "eslint src/ --ext .js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/restuta/bp-node.git"
+  },
+  "author": "Anton Vynogradenko <restuta8@gmail.com> (http://restuta.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/restuta/bp-node/issues"
+  },
+  "homepage": "https://github.com/restuta/bp-node#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.9.0",
+    "commander": "^8.1.0",
+    "left-pad": "^1.3.0",
+    "moment": "^2.29.1",
+    "parse-link-header": "^1.0.1"
+  }
+}
