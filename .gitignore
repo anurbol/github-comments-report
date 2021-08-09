@@ -39,3 +39,4 @@ jspm_packages
 dist
 
 src/token/__do-not-commit-me__.js
+config.bat
