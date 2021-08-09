@@ -13,7 +13,7 @@ module.exports = {
   httpRequestErrorHandler(err) {
     if (
       err.response.status === 403 &&
-      err.response.data.message.includes === 'rate limit exceeded'
+      err.response.data.message.includes('rate limit exceeded')
     ) {
       console.log('Rate limit exceeded...')
       return
