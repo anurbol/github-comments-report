@@ -39,4 +39,7 @@ jspm_packages
 dist
 
 src/token/__do-not-commit-me__.js
-config.bat
+
+# Incident containment: keep local environment secrets out of Git.
+.env
+.env.*
